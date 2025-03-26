@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Blast - Exciting Block Elimination Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF9800;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            background-color: #F57C00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        section {
+            padding: 20px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .feature-content {
+            padding: 20px;
+        }
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        .feature-desc {
+            font-size: 1rem;
+            color: #666;
+        }
+        .screenshots {
+            text-align: center;
+        }
+        .screenshot-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .screenshot {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .screenshot:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        .contact-title {
+            color: white;
+        }
+        .contact-email {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">TAP BLAST</h1>
+            <p class="tagline">The Ultimate Block Elimination Adventure!</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About The Game</h2>
+            <p class="intro">
+                Tap Blast is an exciting block elimination game featuring adorable cat characters and challenging puzzles. Match colorful blocks, create powerful combos, and blast your way through hundreds of levels in this addictive puzzle adventure!
+            </p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Game Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Badass Effects</h3>
+                        <p class="feature-desc">
+                            Experience stunning visual effects as you match blocks and trigger powerful combos. Watch as explosions light up the screen with every successful match!
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Blazing Elimination</h3>
+                        <p class="feature-desc">
+                            Create chains of matching blocks to trigger spectacular eliminations. The more blocks you match, the more impressive the elimination effects will be!
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Classic Level Challenges</h3>
+                        <p class="feature-desc">
+                            Progress through hundreds of increasingly challenging levels. Each level offers unique puzzles and obstacles to overcome with limited moves!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots">
+        <div class="container">
+            <h2 class="section-title">Screenshots</h2>
+            <div class="screenshot-container">
+                <img src="images/screenshot1.jpg" alt="Badass Effects" class="screenshot">
+                <img src="images/screenshot2.jpg" alt="Blazing Elimination" class="screenshot">
+                <img src="images/screenshot3.jpg" alt="Classic Level Challenges" class="screenshot">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title contact-title">Support</h2>
+            <p>Need help or have questions? Contact our support team:</p>
+            <div class="contact-email">zhangnqnq@163.com</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tap Blast. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
